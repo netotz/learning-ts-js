@@ -1,6 +1,7 @@
 export {}
 
-const response = await fetch('https://swapi.dev/api/films/')
+const swapiUrl = 'https://swapi.dev/api/films/'
+const response = await fetch(swapiUrl)
 const json = await response.json()
 
 console.log(json)
